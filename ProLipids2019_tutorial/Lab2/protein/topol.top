@@ -1,0 +1,50 @@
+;
+;	File 'topol.top' was generated
+;	By user: ksekorsh (1349102)
+;	On host: dx9-5282-12514
+;	At date: Mon May 23 18:34:16 2022
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2020.6 (-:
+;	
+;	Executable:   /home/group/cubbli/opt/gromacs-2020.6/bin/gmx
+;	Data prefix:  /home/group/cubbli/opt/gromacs-2020.6
+;	Working dir:  /home/local/ksekorsh/Documents/year01/2022SommerStudents/ProLipids2019/Lab2/protein
+;	Command line:
+;	  gmx pdb2gmx -f 1y2o_modified.pdb -o 1y2o_modified.gro -water tip3p -ignh -his
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "oplsaa.ff/forcefield.itp"
+
+; Include chain topologies
+#include "topol_Protein_chain_A.itp"
+#include "topol_Protein_chain_B.itp"
+
+; Include water topology
+#include "oplsaa.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+; Name
+BAI1-ASSOCIATED PROTEIN 2 ISOFORM 1 in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1
+Protein_chain_B     1
+SOL         79362
+NA               140
+CL               150

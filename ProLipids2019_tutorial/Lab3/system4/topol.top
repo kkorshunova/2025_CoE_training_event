@@ -1,0 +1,20 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "lipid-opls.itp"
+#include "tip3p.itp"
+#include "oplsaa.ff/ions.itp"
+#include "b2AR.itp"
+#include "dopc-3.itp"
+#include "chol_OPLSaa.itp"
+
+[ system ]
+DOPC bilayer 440 lipids in water
+; DOPC +10 % anionic CHS 
+
+[ molecules ]
+
+Protein       1
+DOPC        306
+CHO         206
+SOL       36518
+NA           99 
+CL          106

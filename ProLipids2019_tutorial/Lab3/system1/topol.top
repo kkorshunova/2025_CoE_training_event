@@ -1,0 +1,17 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "lipid-opls.itp"
+#include "b2AR.itp"
+#include "dopc_tr_mm.itp"
+#include "oplsaa.ff/tip3p.itp"
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+b2ar + DOPC + sol 
+
+[ molecules ]
+
+Protein           1
+DOPC              202
+SOL               18962
+NA                51
+CL                58

@@ -1,0 +1,30 @@
+# This file was created Mon May 23 18:56:33 2022
+# Created by:
+#                      :-) GROMACS - gmx energy, 2020.6 (-:
+# 
+# Executable:   /home/group/cubbli/opt/gromacs-2020.6/bin/gmx
+# Data prefix:  /home/group/cubbli/opt/gromacs-2020.6
+# Working dir:  /home/local/ksekorsh/Documents/year01/2022SommerStudents/ProLipids2019/Lab2/protein
+# Command line:
+#   gmx energy -f em.edr -o potential.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  -1960691.375000
+    1.000000  -2012917.375000
+    2.000000  -2209918.750000
+    3.000000  -2541191.250000
+    4.000000  -2801468.000000
+    5.000000  -2983934.250000

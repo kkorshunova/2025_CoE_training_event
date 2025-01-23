@@ -1,0 +1,17 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "OPLSaa.db"
+#include "pip2.itp"
+#include "popc.itp"
+#include "oplsaa.ff/tip3p.itp"
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+256-lipid PIP2/POPC bilayer in water
+
+[molecules]
+PIP2         12
+POPC        116
+PIP2         12
+POPC        116
+SOL         11682
+NA               120

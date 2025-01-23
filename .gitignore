@@ -1,0 +1,4 @@
+# huge trajectories #
+#####################
+/**/*.xtc
+*.xtc

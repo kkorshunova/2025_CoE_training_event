@@ -1,0 +1,41 @@
+; Include forcefield parameters
+#include "oplsaa.ff/forcefield.itp"
+; required for the lipids
+#include "TOP/OPLSaa.db"
+
+; Include protein chain topologies
+#include "TOP/topol_Protein_chain_A.itp"
+#include "TOP/topol_Protein_chain_B.itp"
+
+#include "TOP/pip2.itp"
+#include "TOP/popc.itp"
+
+; Include water topology
+#include "oplsaa.ff/tip3p.itp"
+
+; Include topology for ions
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+; Name
+BAI1-ASSOCIATED PROTEIN 2 ISOFORM 1 in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1
+Protein_chain_B     1
+;
+PIP2         12
+POPC        116
+PIP2         12
+POPC        116
+;
+PIP2         12
+POPC        116
+PIP2         12
+POPC        116
+;
+PIP2         12
+POPC        116
+PIP2         12
+POPC        116
