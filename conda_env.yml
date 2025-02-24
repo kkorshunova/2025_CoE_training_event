@@ -1,0 +1,6 @@
+name: CoE_training
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - matplotlib
