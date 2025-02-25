@@ -4,3 +4,4 @@ dependencies:
   - numpy
   - pandas
   - matplotlib
+  - gromacs=2024.4
